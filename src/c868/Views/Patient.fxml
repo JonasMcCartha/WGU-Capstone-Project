@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="MainView" prefHeight="428.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c868.Controllers.PatientController">
+ <children>
+      <Label alignment="CENTER" layoutX="234.0" layoutY="14.0" prefHeight="30.0" prefWidth="210.0" text="Manage Patients">
+         <font>
+            <Font name="Cambria Math" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="PatientTable" layoutX="30.0" layoutY="60.0" prefHeight="300.0" prefWidth="630.0">
+         <columns>
+            <TableColumn fx:id="PatientNameCol" prefWidth="90.0" text="Name" />
+            <TableColumn fx:id="PatientAddress1Col" prefWidth="90.0" text="Address 1" />
+            <TableColumn fx:id="PatientAddress2Col" prefWidth="90.0" text="Address 2" />
+            <TableColumn fx:id="PatientCityCol" prefWidth="90.0" text="City" />
+            <TableColumn fx:id="PatientStateCol" prefWidth="90.0" text="State" />
+            <TableColumn fx:id="PatientPostalCodeCol" prefWidth="90.0" text="Postal Code" />
+            <TableColumn fx:id="PatientPhoneCol" prefWidth="90.0" text="Phone" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutX="390.0" layoutY="380.0">
+         <children>
+            <Button graphicTextGap="5.0" mnemonicParsing="false" onAction="#handleAddPatient" prefWidth="60.0" text="Add" />
+            <Button layoutX="70.0" mnemonicParsing="false" onAction="#handleModifyPatient" prefWidth="60.0" text="Modify" />
+            <Button layoutX="140.0" mnemonicParsing="false" onAction="#handleDeletePatient" prefWidth="60.0" text="Delete" />
+            <Button layoutX="210.0" mnemonicParsing="false" onAction="#handleBack" prefWidth="60.0" text="Back" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="30.0" layoutY="380.0">
+         <children>
+            
+            <Button graphicTextGap="5.0" mnemonicParsing="false" onAction="#handleSearchPatient" prefHeight="25.0" prefWidth="109.0" text="Search Name:" />
+            <TextField fx:id="PatientSearchField" layoutX="120.0" prefHeight="25.0" prefWidth="188.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

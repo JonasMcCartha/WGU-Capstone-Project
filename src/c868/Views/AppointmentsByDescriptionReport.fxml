@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="MainView" prefHeight="480.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c868.Controllers.AppointmentsByDescriptionReportController">
+ <children>
+      <Label alignment="CENTER" layoutX="30.0" layoutY="6.0" prefHeight="66.0" prefWidth="240.0" text="Appointments by Description" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Cambria Math" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ReportMonthField" layoutX="31.0" layoutY="75.0" prefHeight="25.0" prefWidth="240.0" promptText="Months" />
+      <TableView fx:id="ReportTable" layoutX="30.0" layoutY="115.0" prefHeight="300.0" prefWidth="240.0">
+         <columns>
+            <TableColumn fx:id="ReportDescriptionCol" prefWidth="140.0" text="Description" />
+            <TableColumn fx:id="ReportCountCol" prefWidth="100.0" text="Count" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutX="31.0" layoutY="430.0" prefHeight="25.0" prefWidth="240.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleUpdate" prefHeight="25.0" prefWidth="112.0" text="Update" />
+            <Button layoutX="128.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="25.0" prefWidth="112.0" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

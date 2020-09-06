@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="309.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c868.Controllers.LoginScreenController">
+ <children>
+      <Label alignment="CENTER" layoutX="30.0" layoutY="10.0" prefHeight="62.0" prefWidth="240.0" text="Patient/Appointment Scheduler" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Cambria Math" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="PasswordField" layoutX="30.0" layoutY="88.0" prefHeight="75.0" prefWidth="240.0">
+         <children>
+            <Label fx:id="LoginUsernameLabel" layoutY="8.0" prefHeight="16.0" prefWidth="90.0" text="Username" />
+            <Label fx:id="LoginPasswordLabel" layoutY="56.0" prefHeight="16.0" prefWidth="90.0" text="Password" />
+            <TextField fx:id="LoginUsernameField" layoutX="90.0" prefHeight="32.0" prefWidth="150.0" />
+            <PasswordField fx:id="LoginPasswordField" layoutX="90.0" layoutY="48.0" prefHeight="32.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="30.0" layoutY="258.0" prefHeight="30.0" prefWidth="240.0">
+         <children>
+            <Button fx:id="LoginSaveButton" mnemonicParsing="false" onAction="#handleLogin" defaultButton="true" prefHeight="30.0" prefWidth="108.0" style=" -fx-background-color: linear-gradient(#70ee35, #59cc00);  -fx-background-radius: 6, 5;  " text="Login" textAlignment="CENTER">
+               <font>
+                  <Font name="Cambria Math" size="14.0" />
+               </font></Button>
+            <Button fx:id="LoginCancelButton" layoutX="132.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="30.0" prefWidth="108.0" style="-fx-background-radius: 6, 5;" text="Cancel" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <DialogPane fx:id="MessageBox" layoutX="30.0" layoutY="186.0" prefHeight="30.0" prefWidth="240.0" />
+   </children>
+</AnchorPane>

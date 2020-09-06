@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="360.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c868.Controllers.ManagePatientController">
+ <children>
+      <Label fx:id="PartsPageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="21.0" prefHeight="30.0" prefWidth="300.0" text="Add/Modify Patient" textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Math" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="PasswordField" layoutX="30.0" layoutY="75.0" prefHeight="210.0" prefWidth="300.0">
+         <children>
+            <TextField fx:id="PatientNameField" prefHeight="32.0" prefWidth="300.0" promptText="Patient Name" />
+            <TextField fx:id="PatientAddress1Field" layoutY="45.0" prefHeight="32.0" prefWidth="300.0" promptText="Address 1" />
+            <TextField fx:id="PatientAddress2Field" layoutY="90.0" prefHeight="32.0" prefWidth="300.0" promptText="Address 2" />
+            <TextField fx:id="PatientAddressCityField" layoutY="135.0" prefHeight="32.0" prefWidth="140.0" promptText="City" />
+            <TextField fx:id="PatientAddressStateField" layoutX="160.0" layoutY="135.0" prefHeight="32.0" prefWidth="140.0" promptText="State" />
+            <TextField fx:id="PatientAddressPostalCodeField" layoutY="180.0" prefHeight="32.0" prefWidth="140.0" promptText="Postal Code" />
+            <TextField fx:id="PatientAddressPhoneField" layoutX="160.0" layoutY="180.0" prefHeight="32.0" prefWidth="140.0" promptText="Phone Number" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="30.0" layoutY="300.0" prefHeight="30.0" prefWidth="300.0">
+         <children>
+            <Button layoutY="-1.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="30.0" prefWidth="140.0" style="-fx-background-color: LightSteelBlue;" text="Save">
+               <font>
+                  <Font name="Cambria Math" size="14.0" />
+               </font></Button>
+            <Button layoutX="160.0" layoutY="-1.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="30.0" prefWidth="140.0" style="-fx-background-color: LightSteelBlue;" text="Cancel">
+               <font>
+                  <Font name="Cambria Math" size="14.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
