@@ -4,6 +4,7 @@ My capstone project for my bachelor's at Western Governor's University
 
 Run the .jar file in the main directory to open. Use 'admin' for the user and 'password' for the password to get in. 
 
+-----------------------------------
 
 This a 'Patient Scheduler' desktop application built with Java and JavaFX.  The user can add, modify, and delete patients, create appointments for patients using a calendar GUI, and generate reports for the data.  All patient and appointment data is stored and updated on a MySQL instance running on Google Cloud Platform that I am the sole admin of.  Since this is just a demonstration program and has no real patient data, anyone who uses this program is accessing and can alter the same data as anyone else.
 
